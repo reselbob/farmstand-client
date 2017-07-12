@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Farmstand-Client</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- angular -->
     <script src="http://code.angularjs.org/1.2.0rc1/angular.js"></script>
+    <!-- Farmstand Angular App> -->
     <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
 <div ng-app="farmStandApp" ng-controller="MainCtrl">
-    <input type="button" value="Get Version" ng-click="showVersion()" />
+    <button type="button" class="btn btn-default" ng-click="showVersion()">Get Version</button>
     <h1> Welcome to {{appName}}</h1>
     <h2 ng-hide="versionHide"> Version: {{appVersion}}</h2>
 </div>
